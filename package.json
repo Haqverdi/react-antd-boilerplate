@@ -3,18 +3,62 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^5.4.0",
+    "@sweetalert/with-react": "^0.1.1",
+    "antd": "^3.23.2",
+    "axios": "^0.19.0",
+    "craco-antd": "^1.12.0",
+    "framer-motion": "^1.6.7",
+    "history": "^4.9.0",
+    "i18next": "^17.0.14",
+    "i18next-browser-languagedetector": "^3.0.3",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.8.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-hook-form": "^3.23.5",
+    "react-i18next": "^10.12.4",
+    "react-icons": "^3.7.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "react-text-mask": "^5.4.3",
+    "react-toastify": "^5.3.2",
+    "react-transition-group": "^4.3.0",
+    "redux": "^4.0.4",
+    "redux-starter-kit": "^0.7.0",
+    "reselect": "^4.0.0",
+    "sweetalert": "^2.1.2",
+    "universal-cookie": "^4.0.2",
+    "use-debounce": "^3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "GENERATE_SOURCEMAP=false craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "wesbos"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "react/jsx-props-no-spreading": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "moduleDirectory": [
+            "node_modules",
+            "src"
+          ]
+        }
+      }
+    }
   },
   "browserslist": {
     "production": [
@@ -27,5 +71,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-plugin-html": "6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^1.18.2"
   }
 }
