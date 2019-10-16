@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-function Home(props) {
+function Home() {
   const { t } = useTranslation();
 
-  return <h2>{t('Home')}</h2>;
+  return <h2>{t('Welcome React antd boilerplate')}</h2>;
 }
 
 Home.propTypes = {};
